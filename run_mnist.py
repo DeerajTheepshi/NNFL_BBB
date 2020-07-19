@@ -23,7 +23,7 @@ def main():
     beta_1 = 0.5
     beta_2 = 0.999
     nb_workers = 32
-    nb_epochs = 600
+    nb_epochs = 10
     train_data, test_data = get_mnist_dataset('./dataset/mnist')
     bnn = BNN_Gaussian(200, 0.001)
     bnn.to(device)
